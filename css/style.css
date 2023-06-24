@@ -1,8 +1,8 @@
 /* FONT IMPORTS */
 
-@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Upright:wght@400;500;600&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Montserrat:wght@400;500&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Montserrat:wght@400;500&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
-@font-face {
+/* @font-face {
     font-family: 'Open Sauce';
     src: url('assets/fonts/opensaucesans-bold-webfont.woff2') format('woff2'),
          url('assets/fonts/opensaucesans-bold-webfont.woff') format('woff');
@@ -72,30 +72,41 @@
     font-weight: normal;
     font-style: normal;
 
-}
+} */
 
 /* TYPOGRAPHY & COLOR */
 
 * {
-    font-family: 'Open Sauce';
+    font-family: 'Schibsted Grotesk', sans-serif;
     background-color: #F7F6EF;
 }
 
 p {
-    font: 1.2em 'Open Sauce', sans-serif;
+    font: 1.2em 'Schibsted Grotesk', sans-serif;
 }
 
-h1,h2,h3 {
-    font-family: 'Fraunces', sans-serif;
+span {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    text-transform: uppercase;
 }
+
 
 h1 {
-    font: 1.7em 'Montserrat', sans-serif;
+    font: 1.7em 'Schibsted Grotesk', sans-serif;
     color: #7E702E;
 }
 
+h2 {
+    font: 300 1.5em 'Fraunces', sans-serif;
+}
+
+h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+}
+
 nav a {
-    font: 1.7em 'Montserrat', sans-serif; 
+    font: 1.7em 'Schibsted Grotesk', sans-serif; 
     text-transform: uppercase;
     color: #7E702E;
 }
@@ -127,6 +138,20 @@ header, .nav {
 
 .container {
     margin: 1.2em;
+}
+
+.portfolio {
+    display: flex;
+    align-items: center;
+
+}
+
+.tile {
+    width: 25%;
+}
+
+.tile {
+    text-align: center;
 }
 
 
