@@ -20,6 +20,7 @@
   "homepage": "https://github.com/neilloi/mcneill-shiner-portfolio#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@tailwindcss/typography": "^0.5.10",
     "tailwindcss": "^3.3.3"
   }
 }
