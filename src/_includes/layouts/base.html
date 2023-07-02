@@ -8,11 +8,15 @@
     <link rel="icon" href="assets/img/leaf-favicon.png">
 
 </head>
-<body class="bg-almond">
+<body class="bg-almond min-h-screen flex flex-col justify-between">
 
-{% include 'partials/header.html' %}
-{{ content | safe }}
-{% include 'partials/footer.html' %}
+    {% include 'partials/header.html' %}
+
+    <main class="grow">
+        {{ content | safe }}
+    </main>
+    
+    {% include 'partials/footer.html' %}
 
 <script src="https://kit.fontawesome.com/e225533b31.js" crossorigin="anonymous"></script>
 </body>
