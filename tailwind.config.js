@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'kombu': '414400',
-        'olive': '626c25',
-        'lemon': 'f0d876',
-        'delft': '4472b8',
-        'almond': 'f7f6ef'
+        'kombu': '#414400',
+        'olive': '#626c25',
+        'lemon': '#f2e69a',
+        'delft': '#4e5fe2',
+        'almond': '#f7f6ef'
       },
-      fonts: {
+      fontFamily: {
         'sans': ['"Space Mono"','"Trebuchet MS"', 'ui-sans-serif'],
         'serif': ['BioRhyme', '"Courier New"', 'ui-system-serif']
       },
