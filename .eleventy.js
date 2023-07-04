@@ -1,7 +1,10 @@
 const { DateTime } = require('luxon');
+const Card = require('./src/_includes/components/Card');
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/assets/');
+
+    eleventyConfig.addShortcode('Card', Card);
 
     // eleventyConfig.addCollection('posts', function(collectionApi) {
     //     return collectionApi.getFilteredByGlob('src/blog/posts/**/*.md')
