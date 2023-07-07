@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Artemis Design Co.",
+        "img": "/assets/img/artemis-gif-100comp.gif",
+        "imgAlt": "Animated gif of Artemis Design Co. website",
+        "stack": ["Liquid", "HTML/CSS"],
+        "desc": "Migration to Shopify 2.0 for an ecommerce store, including solutions for one-of-a-kind inventory.",
+        "url": "https://artemisdesignco.com"
+    },
+    {
+        "title": "Marcella Petersen",
+        "img": "/assets/img/marcella-petersen.netlify.app_.png",
+        "imgAlt": "Screenshot of Marcella Petersen portfolio website",
+        "stack": ["Javascript", "TailwindCSS", "11ty"],
+        "desc": "Personal website, blog, and CMS setup for a wine consultant.",
+        "url": "https://marcella-petersen.netlify.app"
+    },
+    {
+        "title": "Peachtree Creek Greenway",
+        "img": "/assets/img/peachtree-gif-100comp.gif",
+        "imgAlt": "Animated gif of Peachtree Creek Greenway website",
+        "stack": ["Wordpress", "HTML/CSS"],
+        "desc": "Website redesign & build for an Atlanta-based nonprofit",
+        "url": "https://peachtreecreek.org/"
+    }
+]
