@@ -7,7 +7,7 @@ module.exports = {
         'kombu': '#414400',
         'olive': '#626c25',
         'lemon': '#f2e69a',
-        'delft': '#4e5fe2',
+        'delft': '#82b1ff',
         'almond': '#f7f6ef'
       },
       fontFamily: {
