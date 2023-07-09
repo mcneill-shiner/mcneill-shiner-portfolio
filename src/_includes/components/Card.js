@@ -6,7 +6,7 @@ function Card({title, img, imgAlt, stack, desc, url, gitUrl}) {
     return html`
         <div class="py-4">
             <a href="${url}" target="_blank"><img src="${img}" alt="${imgAlt}"></a>
-            <span class="block font-semibold text-xl py-4">${title}</span>
+            <h3 class="block font-semibold text-xl py-4">${title}</h3>
             <ul class="uppercase font-serif flex gap-2">
                     ${stack}
             </ul>
