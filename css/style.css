@@ -1,4 +1,4 @@
-/* FONTS */
+/* FONT IMPORTS */
 
 @import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Upright:wght@400;500;600&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Montserrat:wght@400;500&display=swap);
 
@@ -73,3 +73,62 @@
     font-style: normal;
 
 }
+
+/* TYPOGRAPHY & COLOR */
+
+* {
+    font-family: 'Open Sauce';
+    background-color: #F7F6EF;
+}
+
+p {
+    font: 1.2em 'Open Sauce', sans-serif;
+}
+
+h1,h2,h3 {
+    font-family: 'Fraunces', sans-serif;
+}
+
+h1 {
+    font: 1.7em 'Montserrat', sans-serif;
+    color: #7E702E;
+}
+
+nav a {
+    font: 1.7em 'Montserrat', sans-serif; 
+    text-transform: uppercase;
+    color: #7E702E;
+}
+
+/* HEADER */
+
+header, .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav li {
+    margin: 1em;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+/* LAYOUT */
+
+.container {
+    margin: 1.2em;
+}
+
+
+
+
