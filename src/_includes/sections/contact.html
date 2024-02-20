@@ -7,24 +7,24 @@
             <div class="m-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div w-full>
-                        <label for="block contact-name-input" class="font-serif">Full Name</label>
+                        <label for="block contact-name-input" class="">Full Name</label>
                         <input class="block mt-2 mb-5 p-3 w-full focus:outline-neutral-400" type="text" name="name" id="contact-name-input">
                     </div>
                     <div>
-                        <label for="contact-email-input" class="block font-serif">Email Address</label>
+                        <label for="contact-email-input" class="block">Email Address</label>
                         <input class="block mt-2 mb-5 p-3 w-full focus:outline-neutral-400" type="text" name="email" id="contact-email-input">
                     </div>
                 </div>
                 <div>
-                    <label for="contact-subject-input" class="block font-serif">Subject</label>
+                    <label for="contact-subject-input" class="block">Subject</label>
                     <input class="block mt-2 mb-5 p-3 w-full focus:outline-neutral-400" type="text" name="subject" id="contact-subject-input">
                 </div>
                 <div>
-                    <label for="contact-message-input" class="block font-serif">Message</label>
+                    <label for="contact-message-input" class="block">Message</label>
                     <textarea class="block mt-2 mb-5 p-3 w-full focus:outline-neutral-400" name="message" id="contact-message-input" rows="5"></textarea>
                 </div>
                 <div class="text-center">
-                    <button class="bg-kombu py-3 px-6" id="contact-submit"><span class="uppercase text-white font-serif">Submit</span></button>
+                    {% Button 'Submit', 'pear', 'none', true, 'contact-submit' %}
                 </div>
             </div>
 
