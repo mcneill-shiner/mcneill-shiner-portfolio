@@ -1,89 +1,10 @@
-<header class="">
-  <div class="border-b-2 border-black flex justify-between items-center max-w-6xl mx-auto py-2">
+<header class="border-b-2 border-black">
+  <nav id="navbar" class="flex justify-between items-center max-w-6xl mx-auto py-2">
     <img
       src="/assets/img/logo-mcneill-shiner-green.png"
       alt="McNEILL SHINER"
-      class="max-h-20 px-4 py-2
+      class="max-h-12 sm:max-h-16 px-4 py-2
     />
-    <nav class="px-4 relative flex justify-between items-center">
-      <div class="flex items-center md:hidden">
-        <!-- Mobile menu button-->
-        <button type="button" class="inline-flex items-center justify-center rounded-md p-2" aria-controls="mobile-menu" aria-expanded="false">
-          <!-- <span class="absolute -inset-0.5"></span> -->
-          <span class="sr-only">Open main menu</span>
-          <!--
-            Icon when menu is closed.
-
-            Menu open: "hidden", Menu closed: "block"
-          -->
-          <svg class="block h-8 w-8" id="navbar-burger" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-          <!--
-            Icon when menu is open.
-
-            Menu open: "block", Menu closed: "hidden"
-          -->
-          <svg class="hidden h-8 w-8" id="navbar-close" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-      <div class="hidden md:block">
-        <ul
-        class="font-sans flex justify-between items-center"
-      >
-          <li>
-            <a class="text-xl" href="#work">Services</a>
-          </li>
-          <li class="text-xl px-10">
-            <a href="#contact">About</a>
-          </li>
-          <li class="">
-            {% Button 'Get Started', 'pear', '#contact' %}
-          </li>
-        </ul>
-      </div>
-      
-    </nav>
-  </div>
-  <div class="hidden relative z-50" id="navbar-mobile-menu">
-    <div class="space-y-1 px-2 pb-3 pt-2 fixed right-0 max-w-sm bg-cameo">
-      <ul
-      class="space-y-3 px-2 pb-3 pt-2 flex flex-col text-right"
-    >
-        <li>
-          <a class="text-xl" href="#work">Services</a>
-        </li>
-        <li class="text-xl py-2">
-          <a href="#contact">About</a>
-        </li>
-        <li class="">
-          {% Button 'Get Started', 'pear', '#contact' %}
-        </li>
-      </ul>
-    </div>
-  </div>
+      {% Button 'Get Started', 'pear', '#contact' %}
+  </nav>
 </header>
-
-<script>
-  // burger menu
-  // event listener for burger menu; on click, show navbar menu
-  // hide burger button, show close button
-  // on click, reverse
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const burger = document.querySelector('#navbar-burger');
-    const menu = document.querySelector('#navbar-mobile-menu');
-    const close = document.querySelector('#navbar-close');
-
-    const toggleMenu = () => {
-      menu.classList.toggle('hidden');
-      burger.classList.toggle('hidden');
-      close.classList.toggle('hidden');
-    }
-
-    burger.addEventListener('click', toggleMenu);
-    close.addEventListener('click', toggleMenu);
-  })
-</script>
