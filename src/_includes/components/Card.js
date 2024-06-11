@@ -7,7 +7,7 @@ function Card({title, img, imgAlt, stack, desc, url, gitUrl}) {
         <div class="py-2">
             <a href="${url}" target="_blank"><img src="${img}" alt="${imgAlt}"></a>
             <a href="${url}" target="_blank">
-                <h3 class="block font-serif font-semibold tracking-wider text-xl py-2">${title}</h3>
+                <h3 class="block font-serif tracking-wider text-xl py-2">${title}</h3>
             </a>
             <p class="">${desc}</p>
             <div class="py-6">
