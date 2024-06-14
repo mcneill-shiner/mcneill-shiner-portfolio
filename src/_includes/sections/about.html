@@ -1,5 +1,5 @@
 <section>
-    <div class="p-6 bg-kraft">
+    <!-- <div class="p-6 bg-kraft">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl"><span class="border-b-2 border-black">About</span></h2>
             <div class="flex justify-center pt-6 max-w-4xl gap-4">
@@ -9,5 +9,40 @@
                 <p class="font-serif text-2xl font-light leading-relaxed">I’m a web developer and eCommerce consultant with a background in specialty manufacturing and interiors. My sweet spot is working with product-based businesses on the smaller side, particularly those with a deeply personal mission or aesthetic. On the side, you’ll find me needlepointing, knitting, and gardening alongside my pup Ruthie.</p>
             </div>
         </div>
+    </div> -->
+    <!-- Right Place version -->
+    <div class="sm:grid sm:grid-cols-6 bg-kraft">
+        <div class="sm:col-span-3 xl:col-span-2 pt-4 sm:py-auto flex-col justify-center sm:justify-end items-center sm:h-96 px-8 space-y-4">
+            <h2 class="text-3xl"><span class="border-b-2 border-black">About</span></h2>
+            <div class="sm:w-8/12 lg-max-xl:w-7/12 object-cover">
+                <img src="/assets/img/mcneill-shiner-headshot-2.jpg" class="" alt="">
+            </div>          
+        </div>
+        <div class="sm:col-span-3 xl:col-span-4 p-4 flex items-center justify-center sm:justify-start sm:mx-4">
+            <div class="w-10/12 space-y-4">
+                <p class="font-serif text-2xl font-light leading-relaxed">I’m a web developer and eCommerce consultant with a background in specialty manufacturing and interiors. My sweet spot is working with product-based businesses on the smaller side, particularly those with a deeply personal mission or aesthetic. On the side, you’ll find me needlepointing, knitting, and gardening alongside my pup Ruthie.</p>
+            </div>
+            </div>
+        </div class="pb-4">
     </div>
-</section>
+    <div class="h-48"></div>
+    <!-- Flex shrink/grow version -->
+    <div class="bg-kraft">
+        <div class="mx-auto">
+            <div class="sm:flex sm:justify-center max-w-4xl">
+                <div class="sm:grow-1 sm:shrink-1 sm:basis-48 pt-4 sm:py-auto sm:mx-4 space-y-4">
+                    <h2 class="text-3xl text-center sm:text-right"><span class="border-b-2 border-black">About</span></h2>
+                    <div class="mx-auto">
+                        <img src="/assets/img/mcneill-shiner-headshot-2.jpg" class="mx-auto" alt="Headshot of McNeill Shiner, a white woman with brown hair and eyes, wearing a striped shirt">
+                    </div>          
+                </div>
+                <div class="sm:grow-1 sm:shrink-1 sm:basis-48 p-4 sm:mx-4">
+                    <div class="">
+                        <p class="text-center sm:text-left font-serif text-2xl font-light leading-relaxed">I’m a web developer and eCommerce consultant with a background in specialty manufacturing and interiors. My sweet spot is working with product-based businesses on the smaller side, particularly those with a deeply personal mission or aesthetic. On the side, you’ll find me needlepointing, knitting, and gardening alongside my pup Ruthie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+
