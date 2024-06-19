@@ -9,10 +9,10 @@ module.exports = {
         'kraft': '#b89765',
         'pear': '#bbb45b',
         'cameo': '#e7a491',
-        'sunshine': '#ebb707'
+        'sunshine': '#eic667'
       },
       fontFamily: {
-        'sans': ['"Schibsted Grotesk"','"Trebuchet MS"', 'ui-sans-serif'],
+        'sans': ['"Inter"','"Trebuchet MS"', 'ui-sans-serif'],
         'serif': ['Bogart', '"Garamond"', 'ui-system-serif']
       },
     },
