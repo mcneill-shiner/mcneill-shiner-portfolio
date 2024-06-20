@@ -11,7 +11,7 @@ module.exports = (text, color, link, isSubmit, id) => {
     `;
   } else {
     return `
-    <a href="${link}">
+    <a href="${link}" class="inline-block">
       <span class="bg-${color} text-lg inline-block font-medium uppercase p-2 border-2 border-black rounded-lg">${text}</span>
     </a>
   `;
