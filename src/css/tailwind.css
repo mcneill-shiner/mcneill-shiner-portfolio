@@ -1,24 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-@font-face{
-    font-family: "Bogart";
-    font-style: normal;
+@font-face {
+    font-family: 'Bogart';
+    src: url('../assets/fonts/bogart/bogart-regular-webfont.woff2'),
+         url('../assets/fonts/bogart/bogart-regular-webfont.woff');
     font-weight: 400;
-    src: url("../assets/fonts/bogart/Bogart-Regular-trial.ttf")
-};
-@font-face{
-    font-family: "Bogart";
     font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Bogart';
+    src: url('../assets/fonts/bogart/bogart-light-webfont.woff2'),
+         url('../assets/fonts/bogart/bogart-light-webfont.woff');
     font-weight: 300;
-    src: url("../assets/fonts/bogart/Bogart-Light-trial.ttf")
-};
-@font-face{
-    font-family: "Bogart";
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Bogart';
+    src: url('../assets/fonts/bogart/bogart-lightitalic-webfont.woff2'),
+         url('../assets/fonts/bogart/bogart-lightitalic-webfont.woff');
+    font-weight: 300;
     font-style: italic;
-    font-weight: 300;
-    src: url("../assets/fonts/bogart/Bogart-Light-Italic-trial.ttf")
-};
+
+}
 
 @tailwind base;
 @tailwind components;
