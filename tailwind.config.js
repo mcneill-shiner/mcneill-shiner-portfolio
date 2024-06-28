@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'kombu': '#414400',
+        'kombu': '#4#626c25',
         'almond': '#f7f6ef',
         'kraft': '#b89765',
         'pear': '#bbb45b',
