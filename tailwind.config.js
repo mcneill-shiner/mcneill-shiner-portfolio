@@ -12,7 +12,7 @@ module.exports = {
         'sunshine': '#eic667'
       },
       fontFamily: {
-        'sans': ['"Inter"','"Trebuchet MS"', 'ui-sans-serif'],
+        'sans': ['"Schibsted Grotesk"','"Trebuchet MS"', 'ui-sans-serif'],
         'serif': ['Bogart', '"Garamond"', 'ui-system-serif']
       },
     },
