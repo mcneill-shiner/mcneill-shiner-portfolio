@@ -15,17 +15,20 @@
   </div>
 </section>
 <script>
-  consoleText(['...strategy', '...operations', '...execution', '...analytics', '...web development', '...prioritization', '...systems', '...making big moves'], 'changing-text', 3);
+  // text, id of text container, maximum number of animation rotations
+  animateText(['...strategy', '...operations', '...execution', '...analytics', '...web development', '...prioritization', '...systems', '...making big moves'], 'changing-text', 3);
 
-  function consoleText(words, id, rotationLimit) {
+  function animateText(words, id, rotationLimit) {
     let letterCount = 1;
-    let x = 1;
+    let interval = 1;
     let waiting = false;
     let rotationCount = 0;
-    const stopChange = words.length * rotationLimit;
+    const stopChange = words.length * rotationLimit - 1;
     const target = document.getElementById(id)
+
     let runAnimation = window.setInterval(function() {
 
+      // 3) completed decrement, ready for new word
       if (letterCount === 0 && waiting === false) {
         waiting = true;
         target.innerHTML = words[0].substring(0, letterCount)
@@ -33,22 +36,25 @@
           const usedWord = words.shift();
           words.push(usedWord);
           rotationCount++;
-          x = 1;
+          interval = 1;
         
-          letterCount += x;
+          letterCount += interval;
           waiting = false;
         }, 1000)
+        // 2) at end of word, ready to decrement
       } else if (letterCount === words[0].length + 1 && waiting === false) {
         waiting = true;
         window.setTimeout(function() {
-          x = -1;
-          letterCount += x;
+          interval = -1;
+          letterCount += interval;
           waiting = false;
         }, 1000)
+        // 1) regular increment
       } else if (waiting === false) {
         target.innerHTML = words[0].substring(0, letterCount)
-        letterCount += x;
-        if (rotationCount === stopChange - 1 && letterCount === words[0].length + 1) {
+        letterCount += interval;
+        // 4) max rotations have taken place, end animation on last word
+        if (rotationCount === stopChange && letterCount === words[0].length + 1) {
           console.log('rotations complete');
           clearInterval(runAnimation);
         }
