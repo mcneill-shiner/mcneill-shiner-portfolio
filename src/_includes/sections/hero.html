@@ -15,15 +15,16 @@
   </div>
 </section>
 <script>
-  consoleText(['...strategy', '...operations', '...execution', '...analytics', '...web development', '...prioritization', '...systems', '...getting the big things done'], 'changing-text');
+  consoleText(['...strategy', '...operations', '...execution', '...analytics', '...web development', '...prioritization', '...systems', '...making big moves'], 'changing-text', 3);
 
-  function consoleText(words, id) {
+  function consoleText(words, id, rotationLimit) {
     let letterCount = 1;
     let x = 1;
     let waiting = false;
-    const stopChange = words.length * 3;
+    let rotationCount = 0;
+    const stopChange = words.length * rotationLimit;
     const target = document.getElementById(id)
-    window.setInterval(function() {
+    let runAnimation = window.setInterval(function() {
 
       if (letterCount === 0 && waiting === false) {
         waiting = true;
@@ -31,6 +32,7 @@
         window.setTimeout(function() {
           const usedWord = words.shift();
           words.push(usedWord);
+          rotationCount++;
           x = 1;
         
           letterCount += x;
@@ -46,7 +48,12 @@
       } else if (waiting === false) {
         target.innerHTML = words[0].substring(0, letterCount)
         letterCount += x;
+        if (rotationCount === stopChange - 1 && letterCount === words[0].length + 1) {
+          console.log('rotations complete');
+          clearInterval(runAnimation);
+        }
       }
     }, 120)
+
   }
 </script>
