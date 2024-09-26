@@ -12,8 +12,8 @@ module.exports = {
         'sunshine': '#e1c667'
       },
       fontFamily: {
-        'sans': ['"Schibsted Grotesk"','"Trebuchet MS"', 'ui-sans-serif'],
-        'serif': ['Bogart', '"Garamond"', 'ui-system-serif']
+        'sans': ['"Inter"','"Trebuchet MS"', 'ui-sans-serif'],
+        'serif': ['"Zilla Slab"', '"Garamond"', 'ui-system-serif']
       },
     },
   },
