@@ -6,10 +6,11 @@ module.exports = {
       colors: {
         'kombu': '#626c25',
         'almond': '#f7f6ef',
-        'kraft': '#b89765',
+        'kraft': '#c0a377',
         'pear': '#bbb45b',
         'cameo': '#e7a491',
-        'sunshine': '#e1c667'
+        'sunshine': '#e1c667',
+        'oxblood': '#310101'
       },
       fontFamily: {
         'sans': ['"Inter"','"Trebuchet MS"', 'ui-sans-serif'],
