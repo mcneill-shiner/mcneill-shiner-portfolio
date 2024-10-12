@@ -11,7 +11,7 @@ function Card({title, img, imgAlt, stack, desc, url, gitUrl}) {
             </a>
             <p class="">${desc}</p>
             <div class="py-6">
-                <span class="bg-kraft text-xl font-medium uppercase p-2 border-2 border-oxblood rounded-lg my-4"><a href="${url}" target="_blank">View Project</a></span>
+                <span class="text-xl font-medium uppercase p-2 border-2 border-oxblood rounded-lg my-4"><a href="${url}" target="_blank">View Project</a></span>
                 ${gitUrl ? `<span><a href="${gitUrl}" target="_blank">View Code</a></span>` : ``}
             </div>
 
