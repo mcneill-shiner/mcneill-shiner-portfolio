@@ -14,7 +14,7 @@ module.exports = {
         'crimson': '#B9200A'
       },
       fontFamily: {
-        'sans': ['"Inter"','"Trebuchet MS"', 'ui-sans-serif'],
+        'sans': ['"Schibsted Grotesk"','"Trebuchet MS"', 'ui-sans-serif'],
         'serif': ['"Zilla Slab"', '"Garamond"', 'ui-system-serif']
       },
     },
