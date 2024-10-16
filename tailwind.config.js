@@ -4,16 +4,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'kombu': '#626c25',
+        'kombu': '#5A5007',
         'almond': '#f7f6ef',
-        'kraft': '#b89765',
+        'kraft': '#c0a377',
         'pear': '#bbb45b',
-        'cameo': '#e7a491',
-        'sunshine': '#e1c667'
+        'sunshine': '#e4c34e',
+        'oxblood': '#310101',
+        'lapis': '#364DA1',
+        'crimson': '#B9200A'
       },
       fontFamily: {
         'sans': ['"Schibsted Grotesk"','"Trebuchet MS"', 'ui-sans-serif'],
-        'serif': ['Bogart', '"Garamond"', 'ui-system-serif']
+        'serif': ['"Zilla Slab"', '"Garamond"', 'ui-system-serif']
       },
     },
   },

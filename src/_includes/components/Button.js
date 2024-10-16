@@ -1,8 +1,8 @@
-module.exports = (text, color, link, isSubmit, id) => {
+module.exports = (text, bgColor, borderColor, link, isSubmit, id) => {
   if (isSubmit) {
     return `
       <div>
-        <button id=${id} class="bg-${color} text-lg font-medium uppercase p-2 border-2 border-black rounded-lg">
+        <button id=${id} class="bg-${bgColor} text-lg font-medium uppercase py-2 px-4 border-2 border-${borderColor} rounded-lg">
           <span
             class=""
             >${text}</span>
@@ -12,7 +12,7 @@ module.exports = (text, color, link, isSubmit, id) => {
   } else {
     return `
     <a href="${link}" class="inline-block">
-      <span class="bg-${color} text-lg inline-block font-medium uppercase p-2 border-2 border-black rounded-lg">${text}</span>
+      <span class="bg-${bgColor} text-lg inline-block font-medium uppercase py-2 px-4 border-2 border-${borderColor} rounded-lg">${text}</span>
     </a>
   `;
   }
